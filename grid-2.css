@@ -1,0 +1,42 @@
+.main-container{
+    display: grid;
+    grid-template-rows: repeat(6 , 1fr);
+    grid-template-columns:  repeat(12 , 1fr) ;
+    grid-auto-flow: row;
+    gap: 5px;
+
+}
+
+div{
+    border: 5px solid white;
+    padding: 15px;
+    font-size: larger;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.box:nth-child(1){
+    grid-column: span 12 ;
+    background-color: rgb(140, 204, 77);
+}
+.box:nth-child(2) ,.box:nth-child(3){
+    grid-column: span 6 ;
+    background-color: rgb(140, 204, 77);}
+
+.box:nth-child(4) ,.box:nth-child(5) ,.box:nth-child(6){
+    grid-column: span 4;
+    background-color: rgb(140, 204, 77);
+}
+
+
+.box:nth-child(7) ,.box:nth-child(8) ,.box:nth-child(9) ,.box:nth-child(10){
+    grid-column: span 3;
+    background-color: rgb(140, 204, 77);
+}
+
+.box:nth-child(11) ,.box:nth-child(12) ,.box:nth-child(13) ,.box:nth-child(14) ,.box:nth-child(15) ,.box:nth-child(16){
+    grid-column: span 2;
+    background-color: rgb(140, 204, 77);
+}
+.box{
+    background-color: rgb(140, 204, 77);
+}
